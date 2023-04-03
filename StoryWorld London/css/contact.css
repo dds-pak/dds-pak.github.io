@@ -1,0 +1,122 @@
+#contact-form {
+    margin-top: 115px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../media/frog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    color: #fff;
+}
+
+.explore-info h3 {
+    font-size: 106px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+#clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+}
+
+#clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    box-shadow: 2px 2px 30px #fff;
+    margin-right: 20px;
+}
+
+#clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 26px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    color: #ff1493;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff1493;    
+    box-shadow: 0px 0px 10px #ff1493;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #ff1493;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    border: 1px solid #ff1493;    
+    box-shadow: 0px 0px 10px #ff1493;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: all 0.5s ease;
+}
+
+
+input[type=submit]:hover {
+    background-color: #ff1493;
+    color: #fff;
+    border: 1px solid #ff1493;    
+    box-shadow: 0px 0px 10px #ff1493;
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.explore-info {
+    flex: 1;
+}
+
+.counter-form {
+    flex: 1;
+}
+

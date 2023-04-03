@@ -1,0 +1,148 @@
+nav {
+    position: fixed;
+    top:0;
+}
+
+.primary-color{
+    color: #ff1493;
+}
+/* Intro section */
+
+#intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../media/frog.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #intro h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top:4rem;
+  }
+  
+  #intro p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    line-height: 1.5;
+    margin-left: 6rem;;
+  }
+  
+  .btn {
+    background-color: #fff;
+    color: #fa3688;
+    text-decoration: none;
+    padding: 17px 45px;
+    margin-top: 25px;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ff1493;    
+    box-shadow: 0px 0px 10px #ff1493;
+    transition: all 0.5s ease;
+  }
+  
+  .btn:hover {
+    background-color: #fa3688;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+/* Gallery */
+
+section .title{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 16px;
+}
+section .title::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    content: 'what we have';
+    left:50%;
+    bottom: -21%;
+    background: #fff;
+    color: #ff1493;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+
+.gallery_product{
+    width: 33%;
+    padding-bottom: 8px;
+}
+
+.filter-gal-par {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery_product h4{
+    margin: 5px 0;
+    color: #ff1493;
+}
+.gallery_product img {
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.gallery_product img:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+    transform: scale(1.1, 1.1);
+}
+
+
+/* responsive media queries */
+@media screen and (max-width:913px) {
+
+    #intro h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 11rem;
+    }
+
+    #intro p{
+        margin-left: 0rem;
+        margin-bottom: 0rem;
+        font-size:1rem;
+    }
+    .gallery_product{
+        width: 100%;
+        padding-bottom: 8px;
+        margin-bottom: 3rem;
+    }
+}
